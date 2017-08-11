@@ -26,7 +26,6 @@ module.exports = {
 			if (!!editor.getURI()) {
 				// cfc's need to watch for changes so the grammar can be switched
 				if (editor.getURI().endsWith("cfc")) {
-					console.log('wtf')
 					bindCfcChangeChecker(editor);
 					checkCfscriptEditorGrammar(editor);
 				// cfm(l) files should use the mixed-mode grammar
@@ -68,7 +67,7 @@ function checkCfscriptEditorGrammar(editor) {
 	) {
 		editor._checking_is_cfscript=true;
 		//	Only run this is the grammars have been defined.
-
+		
 		for (var line of editor.getBuffer().getLines()) {
 			if (line.length) {
 			 	if (/(\bimport\b|^\s*\/\*|^\s*\/\/|\bcomponent\b|\binterface\b)/.test(line)) {
