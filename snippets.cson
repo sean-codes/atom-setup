@@ -21,4 +21,5 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 'source.cfscript':
     'mail':
-       
+      'prefix': 'cfmail'
+      'body': '<cfmail to="test@alpinehomeair.com" from="technical@alpinehomeair.com" subject="Tech Email" type="html">\n <cfdump var="##">\n</cfmail>'
