@@ -1,0 +1,7 @@
+'.text.html.cfml, .source.cfml':
+  'editor':
+    'commentStart': '<!--- '
+    'commentEnd': ' --->'
+'.text.script.cfscript, .source.cfscript':
+  'editor':
+    'commentStart': '// '

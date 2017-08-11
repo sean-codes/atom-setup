@@ -1,0 +1,3 @@
+'body':
+  'ctrl-shift-tab': 'pane:show-previous-item'
+  'ctrl-tab': 'pane:show-next-item'
