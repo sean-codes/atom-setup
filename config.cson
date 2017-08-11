@@ -6,3 +6,6 @@
     userId: "a1f2645c-4418-472e-8b97-91304e9b2564"
   welcome:
     showOnStartup: false
+".cfml.html.text":
+  editor:
+    tabLength: 3

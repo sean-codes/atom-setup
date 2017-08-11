@@ -19,7 +19,15 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
-'source.cfscript':
-    'mail':
-      'prefix': 'cfmail'
-      'body': '<cfmail to="test@alpinehomeair.com" from="technical@alpinehomeair.com" subject="Tech Email" type="html">\n <cfdump var="##">\n</cfmail>'
+'.source.cfml':
+  'cfmailfast':
+    'prefix': 'cfmailfast'
+    'body': '<cfmail to="technical@alpinehomeair.com" from="technical@alpinehomeair.com" subject="Test" server="" type="html">\n	<cfdump var="test">\n<cfmail>'
+'.text.html.cfml':
+  'cfmailfast':
+    'prefix': 'cfmailfast'
+    'body': '<cfmail to="technical@alpinehomeair.com" from="technical@alpinehomeair.com" subject="Test" server="" type="html">\n	<cfdump var="test">\n<cfmail>'
+'.source.cfscript':
+  'cfmailfast':
+    'prefix': 'cfmailfast'
+    'body': 'mail subject="TEST" to="technical@alpinehomeair.com" from="errors@alpinehomeair.com" type="html" { dump(\'test\'); }'
